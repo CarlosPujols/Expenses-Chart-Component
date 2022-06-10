@@ -8,36 +8,65 @@
   
   <title>Frontend Mentor | Expenses chart component</title>
 
+  <link rel="stylesheet" href="styles.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=DM+Sans:wght@700&display=swap" rel="stylesheet">
+
   <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
   <style>
     .attribution { font-size: 11px; text-align: center; }
     .attribution a { color: hsl(228, 45%, 44%); }
   </style>
 </head>
+
 <body>
 
-  My balance
-  $921.48
 
-  Spending - Last 7 days
+  <div class="global-container">
+    <header class="header">
+      My balance
+      $921.48
+    </header>
 
-  mon
-  tue
-  wed
-  thu
-  fri
-  sat
-  sun
+    <section class="info-panel">
 
-  Total this month
-  $478.33
+      <div class="info-panel-container">
 
-  +2.4%
-  from last month
+       <h2 class="panel-header">Spending - Last 7 days</h2>
+
+       <div class="chart">
+
+        <p>mon</p>
+        <p>tue</p>
+        <p>wed</p>
+        <p>thu</p>
+        <p>fri</p>
+        <p>sat</p>
+        <p>sun</p>
+
+        </div>
+
+        <div class="chart-summary">
+          <div class="total">
+            <p>Total this month</p>
+            <h1>$478.33</h1>
+          </div>
+          <div class="result">
+            <h3>+2.4%</h3>
+            <p>from last month</p>
+          </div>
+        </div>
+      </div>
+    
+    </section>
+  </div>
   
   <div class="attribution">
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
     Coded by <a href="#">Your Name Here</a>.
   </div>
+
+  <script src="app.js"></script>
 </body>
 </html>
