@@ -11,7 +11,7 @@
   <link rel="stylesheet" href="styles.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=DM+Sans:wght@700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;700&display=swap" rel="stylesheet">
 
   <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
   <style>
@@ -24,10 +24,15 @@
 
 
   <div class="global-container">
-    <header class="header">
-      My balance
-      $921.48
-    </header>
+    <div class="header-container">
+      <div class="header-info">
+        <p>My balance</p>
+        <h2>$921.48</h2>
+      </div>
+      <div class="logo">
+        <img src="images/logo.svg" alt="">
+      </div>
+    </div>
 
     <section class="info-panel">
 
@@ -37,15 +42,37 @@
 
        <div class="chart">
 
-        <p>mon</p>
-        <p>tue</p>
-        <p>wed</p>
-        <p>thu</p>
-        <p>fri</p>
-        <p>sat</p>
-        <p>sun</p>
+          <div class="chart-container">
+
+            <div class="bars-container">
+
+              <span class="percentage">  </span>
+              <span class="percentage">  </span>
+              <span class="percentage">  </span>
+              <span class="percentage">  </span>
+              <span class="percentage">  </span>
+              <span class="percentage">  </span>
+              <span class="percentage">  </span>
+
+            </div>
+          
+            <div class="weekdays">
+
+              <p>mon</p>
+              <p>tue</p>
+              <p>wed</p>
+              <p>thu</p>
+              <p>fri</p>
+              <p>sat</p>
+              <p>sun</p>
+
+            </div>
+
+          </div>
 
         </div>
+
+        <div class="div"><span class="separator">  </span></div>
 
         <div class="chart-summary">
           <div class="total">
