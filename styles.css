@@ -13,7 +13,7 @@ body{
 }
 
 .global-container{
-    border: 1px solid hsla(30, 100%, 98%, 0);
+    border: 1px solid hsl(0, 0%, 0%);
     margin-left: auto;
     margin-right: auto;
     max-width: 359px;
@@ -22,7 +22,7 @@ body{
 }
 
 .header-container{
-    margin-top: 30%;
+    margin-top: 10%;
     height: 13%;
     background-color: hsl(10, 79%, 65%);
     border-radius: 10px;
@@ -31,6 +31,9 @@ body{
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     margin-bottom: 16px;
+    width: 95%;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .header-info{
@@ -61,13 +64,16 @@ body{
 
 
 .info-panel{
-    height: 60vh;
+    max-height: 65vh;
     background-color: hsl(33, 100%, 98%);
     border-radius: 10px;
     padding-left: 24px;
     padding-right: 24px;
     padding-top:28px;
     padding-bottom:28px;
+    width: 95%;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .info-panel-container h2{
@@ -98,15 +104,45 @@ body{
     grid-template-columns: repeat(7, 1fr);
     gap:0.70rem;
     margin-bottom: 8px;
+    align-items: baseline;
 }
 
 .bars-container span{
     width: 1fr;
     display: inline;
-    height: 50px;
-    background-color: rgb(1, 89, 177);
+    background-color: hsl(10, 79%, 65%);
     border-radius: 5px;
 }
+
+
+.percentage:nth-of-type(1){
+    height: calc(((17.45*28)/52.36) * 1vh);
+}
+
+.percentage:nth-of-type(2){
+    height: calc(((34.91*28)/52.36) * 1vh);
+}
+
+.percentage:nth-of-type(3){
+    height: calc(((52.36*28)/52.36) * 1vh);
+}
+
+.percentage:nth-of-type(4){
+    height: calc(((31.07*28)/52.36) * 1vh);
+}
+
+.percentage:nth-of-type(5){
+    height: calc(((23.39*28)/52.36) * 1vh);
+}
+
+.percentage:nth-of-type(6){
+    height: calc(((43.28*28)/52.36) * 1vh);
+}
+
+.percentage:nth-of-type(7){
+    height: calc(((25.48*28)/52.36) * 1vh);
+}
+
 
 .weekdays{
     display: grid;
